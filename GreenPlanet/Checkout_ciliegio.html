@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>Green Planet</title>
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Bitter:400,700">
+    <link rel="stylesheet" href="assets/fonts/fontawesome-all.min.css">
+    <link rel="stylesheet" href="assets/fonts/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/fonts/fontawesome5-overrides.min.css">
+    <link rel="stylesheet" href="assets/css/Article-List.css">
+    <link rel="stylesheet" href="assets/css/best-carousel-slide.css">
+    <link rel="stylesheet" href="assets/css/Bootstrap-4---Full-Video-Background-v2.css">
+    <link rel="stylesheet" href="assets/css/cacao.css">
+    <link rel="stylesheet" href="assets/css/Checkout.css">
+    <link rel="stylesheet" href="assets/css/Congratulazioni.css">
+    <link rel="stylesheet" href="assets/css/Dark-NavBar-1.css">
+    <link rel="stylesheet" href="assets/css/Dark-NavBar-2.css">
+    <link rel="stylesheet" href="assets/css/Dark-NavBar.css">
+    <link rel="stylesheet" href="assets/css/Footer-with-social-media-icons.css">
+    <link rel="stylesheet" href="assets/css/geolocalizzazione.css">
+    <link rel="stylesheet" href="assets/css/Header-Dark.css">
+    <link rel="stylesheet" href="assets/css/homepage.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+    <link rel="stylesheet" href="assets/css/info_cacao.css">
+    <link rel="stylesheet" href="assets/css/italia.css">
+    <link rel="stylesheet" href="assets/css/lista_alberi.css">
+    <link rel="stylesheet" href="assets/css/Login-Form-Clean.css">
+    <link rel="stylesheet" href="assets/css/mappa-albero.css">
+    <link rel="stylesheet" href="assets/css/ml-video-1.css">
+    <link rel="stylesheet" href="assets/css/ml-video.css">
+    <link rel="stylesheet" href="assets/css/Navigation-Clean.css">
+    <link rel="stylesheet" href="assets/css/paintuamzione.css">
+    <link rel="stylesheet" href="assets/css/profilo.css">
+</head>
+
+<body>
+   <header>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4"></div>
+                <div class="col-md-4">
+                    <div style="text-align: center;"><a href="index.html"><img src="assets/img/logo_definitivo.jpg" style="width: 270px;"></a></div>
+                </div>
+                <div class="col-md-4">
+                    <div style="text-align: center;margin-top: 80px;"><span><i><a href="area-utente.html" class="fa fa-tree" style="font-size: 25px;color:black"></a></i><i><a href="profilo.html" class="fa fa-user" style="font-size: 25px;margin-left: 15px;color:black"></a></i><i><a href="carrello.html" class="fa fa-shopping-cart" style="font-size: 25px;margin-left: 15px;color:black"></a></i></span></div>
+                </div>
+            </div>
+        </div>
+        <div style="min-width: 5px;text-align: center;transform: translate(0px);">
+            <nav class="navbar navbar-light navbar-expand border-white text-uppercase navigation-clean-search" style="display: inline-block;float: none;vertical-align: top;">
+                <div class="container-fluid"><button data-toggle="collapse" class="navbar-toggler" data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
+                    <div class="collapse navbar-collapse" id="navcol-1" style="text-align: center;">
+                        <ul class="navbar-nav">
+                            <li class="nav-item"></li>
+                            <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                            <li class="nav-item"><a class="nav-link" href="lista_alberi.html">Acquista<br></a></li>
+                            <li class="nav-item"><a class="nav-link" href="ControlloCO2.html">Controllo CO2</a></li>
+                            <li class="nav-item"><a class="nav-link" href="Geolocalizzazione.html">Geolocalizzazione</a></li>
+                            <li class="nav-item"><a class="nav-link" href="Contattaci.html">Contattaci</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <div style="text-align:center"><h1>CHECK OUT&nbsp;</h1></div>
+    <div class="container">
+        <div class="row" style="margin-top: 55px;">
+            <div class="col-md-6">
+                <div style="margin: 0px;">
+                    <form method="post" action="Congratulazioni.html" onsubmit= "return controlla()">
+                        <h3>Indirizzo di consegna</h3>
+                        <label for="nome" style="margin-top: 20px;">Nome e Cognome</label><input class="form-control" type="text" id="nome">
+                        <div><h3 style="color: red;font-size:15px" id="erroreRegnome"></h3></div>                       
+                        <label for="via" style="margin-top: 20px;">Via</label><input class="form-control" type="text" id="via">
+                        <div><h3 style="color: red;font-size:15px" id="erroreRegvia"></h3></div>
+                        <label for="&quot;città&quot;" style="margin-top: 20px;">Città</label><input class="form-control" type="text" id="citta">
+                        <div><h3 style="color: red;font-size:15px" id="erroreRegcitta"></h3></div>                        
+                        <label for="cap" style="margin-top: 20px;">Provincia&nbsp;</label><input class="form-control" type="text" id="provincia" style="width: 89px;">
+                        <div><h3 style="color: red;font-size:15px" id="erroreRegprovincia"></h3></div>                        
+                        <label for="provincia" style="margin-top: 20px;">CAP&nbsp;</label><input class="form-control" type="text" id="cap" style="width: 95px;">
+                        <div><h3 style="color: red;font-size:15px" id="erroreRegcap"></h3></div>                      
+                        <label for="tel" style="margin-top: 20px;">Telefono&nbsp;</label><input class="form-control" type="text" id="tel" style="width: 330px;">
+                        <div><h3 style="color: red;font-size:15px" id="erroreRegtelefono"></h3></div>
+                        <h3 style="margin-top: 58px;">Modalità di pagamento</h3>                         
+                        <label for="ncarta" style="margin-top: 20px;">Numero della carta</label><input class="form-control" type="text" id="ncarta">
+                        <div><h3 style="color: red;font-size:15px" id="erroreRegnumcarta"></h3></div>                       
+                        <label for="nomeCarta" style="margin-top: 20px;">Nome sulla carta</label><input class="form-control" type="text" id="nomecarta">
+                        <div><h3 style="color: red;font-size:15px" id="erroreRegnomecarta"></h3></div>                        
+                        <label for="&quot;scadenza&quot;" style="margin-top: 20px;">Data di scadenza&nbsp;</label><input class="form-control" type="text" id="scadenza">
+                        <div><h3 style="color: red;font-size:15px" id="erroreRegscadenza"></h3></div>                        
+                        <label for="cvv" style="margin-top: 20px;">CVV&nbsp;</label><input class="form-control" type="text" id="cvv" style="width: 95px;">
+                        <div><h3 style="color: red;font-size:15px" id="erroreRegcvv"></h3></div>
+                        <h3 style="margin-top: 36px;">Tipo di Piantumazione</h3>
+                        <div class="form-check"><input id="distanza" class="form-check-input" name="avocado" type="radio" checked><label class="form-check-label" for="formCheck-1">A distanza</label></div>
+                        <div class="form-check"><input id="casa" class="form-check-input" name="avocado" type="radio" ><label class="form-check-label" for="formCheck-1">A casa</label></div><button class="btn btn-primary" type="submit" style="margin-top: 38px;">Procedi con l'acquisto</button>
+                    </form>
+                </div>
+            </div>
+            <div class="col-md-6" style="width: 200px;">
+                <div style="margin-top: 45px;background: var(--light);width: 376px;height: 193px;margin-right: 0px;margin-left: 196px;border: 2px solid var(--green);">
+                    <p style="margin-left: 110px;margin-top: 30px;"><strong>Riepilogo Ordine</strong></p>
+                    <p style="margin-left: 110px;margin-top: 30px;">Cacao&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;€34</p>
+                    <p style="margin-left: 110px;margin-top: 30px;"><strong>Totale&nbsp; </strong>&nbsp; &nbsp; &nbsp; &nbsp;€34</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer id="footerpad" style="margin-top: 90px;">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 col-lg-8 mx-auto">
+                    <ul class="list-inline text-center">
+                        <li class="list-inline-item"><a href="#"><span class="fa-stack fa-lg" style="color: #3e3838;"><i class="fa fa-circle fa-stack-2x"></i><i class="fa fa-facebook fa-stack-1x fa-inverse" style="color: #fcfeff;"></i></span></a></li>
+                        <li class="list-inline-item"><a href="#"><span class="fa-stack fa-lg" style="color: #3e3838;"><i class="fa fa-circle fa-stack-2x"></i><i class="fa fa-twitter fa-stack-1x fa-inverse"></i></span></a></li>
+                        <li class="list-inline-item"><a href="#"><span class="fa-stack fa-lg" style="color: #3e3838;"><i class="fa fa-circle fa-stack-2x"></i><i class="fa fa-instagram fa-stack-1x fa-inverse"></i></span></a></li>
+                    </ul>
+                    <p class="copyright text-muted text-center" style="color: #FFF;font-size: 16px;">Copyright © Green Planet 2021 | Web Design by Group 14</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="assets/js/bs-init.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script src="assets/js/ml-video.js"></script>
+    <script src="assets/js/checkout.js"></script>
+</body>
+
+</html>

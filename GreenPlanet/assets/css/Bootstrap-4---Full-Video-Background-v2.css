@@ -1,0 +1,14 @@
+.video-background-holder {
+}
+
+.video-background-holder video {
+}
+
+.video-background-content {
+  position: relative;
+  z-index: 2;
+}
+
+.video-background-overlay {
+}
+
